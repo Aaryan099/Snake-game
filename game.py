@@ -59,7 +59,8 @@ def gameloop():
 	if not os.path.isfile('highscore.txt'):
 		open('highscore.txt','x') 
 		with open ('highscore.txt','w') as f:
-			f.write(str(1))
+			f.write(str(0))
+			f.close()
 
 # Game Loop Variables ***************
 	game_over= False
